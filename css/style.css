@@ -1,0 +1,103 @@
+/*------------------------------------------------------------ Project:	Content Manipulation
+
+Jorge Gomez
+040993417
+20W1531 - Client-side Development
+
+Content
+1. General Styles
+2. Navigation Styles
+3. Main Content Styles
+4. Footer Styles
+5. Media Queries
+
+Colors:
+			Grey 50%:		#808080
+			Grey-greenish:	#adada5
+			Green - Dark: 	#487c5b
+			Pink - Dark:	#e95f83
+			Pink - Light:	#ffb7c9
+			Beige - Light:	#fde2cd
+
+Font Family:
+			font-family: 'Dancing Script', cursive;
+			font-family: 'Ledger', serif;
+
+------------------------------------------------------------*/
+
+/*
+*			1. General Styles
+------------------------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	background-color: #fde2cd;
+}
+
+h1, h2, h3 {
+	font-family: 'Dancing Script', cursive;
+}
+
+p {
+	font-family: 'Ledger', serif;
+	font-size: 1rem;
+}
+
+a {
+	font-family: 'Ledger', serif;
+	font-size: 1rem;
+	text-decoration: none;
+	color: black;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+}
+
+/*
+*			2. Navigation Styles
+------------------------------------------------------------*/
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	background-color: #e95f83;
+	padding: 1.5rem;
+}
+
+nav a:hover {
+	background-color: #f2e3d1;
+	color: #892728;
+	font-weight: bolder;
+}
+
+/*
+*			3. Main Content Styles
+------------------------------------------------------------*/
+
+
+
+/*
+*			5. Media Queries
+------------------------------------------------------------*/
+@media screen and (max-width: 30rem) {
+	nav {
+		display: grid;
+		background-color: #e95f83;
+		padding: 1.5rem;
+	}
+	
+	p, a, a:hover {
+		font-size: 0.75rem;
+ 	 }
+}
+
